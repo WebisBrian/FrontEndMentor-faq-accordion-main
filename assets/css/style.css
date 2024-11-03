@@ -1,0 +1,155 @@
+@font-face {
+    font-family: 'WorkSans-Regular';
+    src: url(../fonts/static/WorkSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'WorkSans-Bold';
+    src: url(../fonts/static/WorkSans-Bold.ttf);
+}
+
+
+/* RESETS */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'WorkSans-Regular', sans-serif;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+/* MOBILE FIRST */
+
+
+body {
+    height: 100vh;
+
+}
+
+header {
+    height: 30vh;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    background-image: url(../images/background-pattern-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: 25% 75%;
+    background-size: cover;
+    z-index: 1;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(275, 100%, 97%);
+
+}
+
+#faqs {
+    width: 90%;
+    background-color: white;
+    border-radius: 10px;
+    z-index: 2;
+    padding: 1rem;
+}
+
+.display-hidden {
+    display: none;
+}
+
+.display-flex {
+    display: flex;
+    padding: 1.5rem 0;
+}
+
+.jcsb {
+    justify-content: space-between;
+}
+
+.aic {
+    align-items: center;
+}
+
+h1 {
+    font-family: 'WorkSans-Bold';
+    padding-left: 2rem;
+    color: hsl(292, 42%, 14%);
+}
+
+h2 {
+    font-size: 1rem;
+    
+}
+
+h2:hover,
+.icon-plus:hover {
+    cursor: pointer;
+    color: #9E37D6;
+}
+
+.icon-plus {
+    margin-left: 1rem;
+}
+
+p {
+    color: #A8A2AA;
+    padding-bottom: 1.5rem;
+}
+
+hr {
+    border: 1px solid rgba(249, 240, 255, 0.5);
+}
+
+.attribution {
+    margin-top: 4rem;
+}
+
+@media screen and (min-width: 768px) {
+
+    header {
+        background-image: url(../images/background-pattern-desktop.svg);
+    }
+    #faqs {
+        width: 50%;
+        border-radius: 15px;
+        padding: 1rem 2rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    
+    #faqs {
+        width: 40%;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    .star-logo {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+
+/* Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { ... } */
